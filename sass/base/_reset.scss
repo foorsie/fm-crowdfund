@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: var(--color-gray-lightest);
+}
+
+hr.devider {
+  border: 0.8px solid var(--color-gray-light);
+  width: 82px;
+  margin: 0 auto;
+  margin-bottom: 2.6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+input.input-default {
+  width: 100px;
+  height: 47px;
+  border-radius: 50px;
+  border: 1px solid var(--color-gray-light);
+  font-weight: 700;
+  font-size: 1.6rem;
+}

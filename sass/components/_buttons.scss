@@ -1,0 +1,81 @@
+.btn {
+  border: none;
+  padding: 1.5rem 3.5rem;
+  font-family: inherit;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &:active,
+  &:visited,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+button:disabled,
+button[disabled] {
+  background: var(--color-gray-dark);
+  cursor: none;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  transition: 0.3s all;
+
+  &:hover {
+    background: var(--color-secondary);
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-gray-dark);
+  position: relative;
+  transition: 0.3s all;
+
+  &:hover {
+    color: var(--color-gray-dark);
+    cursor: pointer;
+
+    img {
+      opacity: 50%;
+    }
+  }
+
+  &:active,
+  &:visited,
+  &:visited {
+    border: none;
+  }
+}
+
+.btn-bookmark-icon {
+  position: absolute;
+  left: -0.5rem;
+  top: 0;
+  height: 5rem;
+  transition: 0.3s all;
+}
+
+.bookmarked-green {
+  filter: invert(69%) sepia(54%) saturate(470%) hue-rotate(126deg)
+    brightness(81%) contrast(83%);
+}
+
+.bookmark-text {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-secondary {
+    background: var(--color-gray-lightest);
+    padding: 1.65rem 3rem 1.65rem 6rem;
+  }
+  .bookmark-text {
+    display: inline;
+  }
+}

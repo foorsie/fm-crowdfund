@@ -1,0 +1,23 @@
+#header-main {
+  max-width: 1107px;
+  margin: 0 auto;
+}
+
+#banner {
+  //   background-color: red;
+  width: 100%;
+  height: 305px;
+  background-image: url("/images/image-hero-mobile.jpg");
+
+  background-size: cover;
+  margin-top: -83px;
+}
+
+@media only screen and (min-width: 768px) {
+  #banner {
+    background-image: url("../../images/image-hero-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+}

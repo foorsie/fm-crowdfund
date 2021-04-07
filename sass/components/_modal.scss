@@ -1,0 +1,74 @@
+#modal-wrapper {
+  width: 100%;
+  position: absolute;
+  z-index: 9999;
+  top: 14rem;
+  left: 0;
+  padding: 0 2.4rem;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 3rem 2.4rem;
+  border-radius: 10px;
+  max-width: 684px;
+  margin: 0 auto;
+}
+
+.modal-header {
+  > h3 {
+    margin-bottom: 0;
+  }
+
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 9998;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+// COFIRMATION MODAL
+
+.confirmation-modal {
+  max-width: 540px;
+  margin: 0 auto;
+
+  .modal-header {
+    display: block;
+    text-align: center;
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.confirmation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 480px) {
+  .modal {
+    padding: 4.8rem 4.8rem;
+  }
+}

@@ -1,0 +1,19 @@
+.progress {
+  position: relative;
+
+  &__current {
+    position: absolute;
+    z-index: 9997;
+    // width: 60%;
+    height: 1rem;
+    border-radius: 50px;
+    background: var(--color-primary);
+  }
+
+  &__pleaceholder {
+    width: 100%;
+    height: 1rem;
+    border-radius: 50px;
+    background: var(--color-gray-light);
+  }
+}

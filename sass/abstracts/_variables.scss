@@ -1,0 +1,13 @@
+// COLORS
+
+:root {
+  --color-primary: hsl(176, 50%, 47%);
+  --color-secondary: hsl(176, 72%, 28%);
+
+  --color-black: #000;
+  --color-gray-dark: hsl(0, 0%, 48%);
+  --color-gray-light: #dbdbdb;
+  --color-gray-lightest: #f5f5f5;
+}
+
+$border: 1px solid var(--color-gray-lightest);
